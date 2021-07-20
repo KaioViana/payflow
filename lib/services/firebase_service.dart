@@ -17,7 +17,7 @@ class _FirebaseServiceState extends State<FirebaseService> {
 
   _FirebaseServiceState(this.app);
   
-  void initializer() async {
+  Future<void> initializer() async {
     try {
       await Firebase.initializeApp();
       setState(() {
